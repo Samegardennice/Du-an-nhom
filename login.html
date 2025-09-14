@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Đăng nhập</title>
+<style>
+  body {font-family:Arial; background:#f4fff4; display:flex; justify-content:center; align-items:center; height:100vh;}
+  .box {background:white; padding:20px; border-radius:8px; box-shadow:0 0 8px #ccc; width:300px;}
+  h2 {text-align:center; color:#2e7d32;}
+  input {width:100%; padding:8px; margin:8px 0; border:1px solid #ccc; border-radius:5px;}
+  button {width:100%; padding:10px; background:#2e7d32; color:white; border:none; border-radius:5px; cursor:pointer;}
+  button:hover {background:#1b5e20;}
+  a {display:block; text-align:center; margin-top:10px; color:#2e7d32;}
+</style>
+</head>
+<body>
+<div class="box">
+  <h2>Đăng nhập</h2>
+  <input id="user" placeholder="Tên đăng nhập">
+  <input id="pass" type="password" placeholder="Mật khẩu">
+  <button onclick="login()">Đăng nhập</button>
+  <a href="register.html">Chưa có tài khoản? Đăng ký</a>
+</div>
+
+<script>
+function login(){
+  let u=document.getElementById("user").value;
+  let p=document.getElementById("pass").value;
+  let savedPass = localStorage.getItem("user_"+u);
+  if(savedPass && savedPass===p){
+    localStorage.setItem("currentUser",u);
+    window.location.href = "Webmain.html";
+  }else{
+    alert("Sai tài khoản hoặc mật khẩu!");
+  }
+}
+</script>
+</body>
+</html>
