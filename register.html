@@ -15,6 +15,29 @@ body {font-family:Arial; background:#f4fff4; display:flex; justify-content:cente
 </head>
 <body>
 <div class="box">
+ <h2>Đăng ký</h2>
+  <input id="user" placeholder="Tên đăng nhập">
+  <input id="pass" type="password" placeholder="Mật khẩu">
+  <button onclick="register()">Tạo tài khoản</button>
+  <a href="login.html">Đã có tài khoản? Đăng nhập</a>
+</div>
 
-
+<script>
+function register(){
+  let u=document.getElementById("user").value;
+  let p=document.getElementById("pass").value;
+  if(u && p){
+    if(localStorage.getItem("user_"+u)){
+      alert("Tài khoản đã tồn tại!");
+    }else{
+      localStorage.setItem("user_"+u,p);
+      alert("Đăng ký thành công, mời đăng nhập!");
+      window.location.href="login.html";
+    }
+  }else{
+    alert("Vui lòng nhập đủ thông tin!");
+  }
+}
+</script>
 </body>
+</html>
