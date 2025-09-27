@@ -1,0 +1,44 @@
+@@ -0,0 +1,43 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Đăng ký</title>
+<style>
+  body {font-family:Arial; background:#f4fff4; display:flex; justify-content:center; align-items:center; height:100vh;}
+  .box {background:white; padding:20px; border-radius:8px; box-shadow:0 0 8px #ccc; width:300px;}
+  h2 {text-align:center; color:#2e7d32;}
+  input {width:100%; padding:8px; margin:8px 0; border:1px solid #ccc; border-radius:5px;}
+  button {width:100%; padding:10px; background:#2e7d32; color:white; border:none; border-radius:5px; cursor:pointer;}
+  button:hover {background:#1b5e20;}
+  a {display:block; text-align:center; margin-top:10px; color:#2e7d32;}
+</style>
+</head>
+<body>
+<div class="box">
+  <h2>Đăng ký</h2>
+  <input id="user" placeholder="Tên đăng nhập">
+  <input id="pass" type="password" placeholder="Mật khẩu">
+  <button onclick="register()">Tạo tài khoản</button>
+  <a href="login.html">Đã có tài khoản? Đăng nhập</a>
+</div>
+
+<script>
+function register(){
+  let u=document.getElementById("user").value;
+  let p=document.getElementById("pass").value;
+  if(u && p){
+    if(localStorage.getItem("user_"+u)){
+      alert("Tài khoản đã tồn tại!");
+    }else{
+      localStorage.setItem("user_"+u,p);
+      alert("Đăng ký thành công, mời đăng nhập!");
+      window.location.href="login.html";
+    }
+  }else{
+    alert("Vui lòng nhập đủ thông tin!");
+  }
+}
+</script>
+</body>
+</html>

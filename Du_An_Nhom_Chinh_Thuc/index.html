@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Campus - Xây dựng Campus Xanh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">Green Campus</div>
+                <div class="nav-menu">
+                    <a href="#home" class="nav-link active">Trang chủ</a>
+                    <a href="#campaigns" class="nav-link">Chiến dịch</a>
+                    <a href="#activities" class="nav-link">Hoạt động xanh</a>
+                    <a href="#ranking" class="nav-link">Bảng xếp hạng</a>
+                    <a href="#rewards" class="nav-link">Đổi thưởng</a>
+                    <div class="auth-buttons">
+                        <button class="login-btn">Đăng nhập</button>
+                        <button class="register-btn">Đăng ký</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Popup Đăng nhập -->
+    <div class="modal" id="loginModal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Đăng nhập</h2>
+        <form>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Mật khẩu" required>
+        <button type="submit">Đăng nhập</button>
+        </form>
+    </div>
+    </div>
+
+    <!-- Popup Đăng ký -->
+    <div class="modal" id="registerModal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Đăng ký</h2>
+        <form>
+        <input type="text" placeholder="Tên" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Mật khẩu" required>
+        <button type="submit">Đăng ký</button>
+        </form>
+    </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Cùng Xây Dựng Campus Xanh</h1>
+                <p>Tham gia cộng đồng sinh viên, học sinh và giảng viên để tạo ra một môi trường học tập xanh, sạch và bền vững. Mỗi hành động nhỏ của bạn đều có ý nghĩa lớn!</p>
+                <div class="hero-buttons">
+                    <button class="cta-btn">Bắt đầu hành động xanh</button>
+                    <button class="secondary-btn">Tìm hiểu thêm</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>Tính năng nổi bật</h2>
+            <p class="section-subtitle">Green Campus cung cấp đầy đủ các công cụ để khuyến khích và quản lý hoạt động môi trường trong trường học</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">👤</div>
+                    <h3>Tạo tài khoản & Theo dõi</h3>
+                    <p>Đăng ký tài khoản để ghi nhận và theo dõi tất cả các hành động xanh mà bạn đã thực hiện.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🌱</div>
+                    <h3>Tham gia chiến dịch</h3>
+                    <p>Đăng nhập để tham gia vào các chiến dịch xanh thú vị mà cộng đồng đề xuất.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📸</div>
+                    <h3>Chia sẻ hành động xanh</h3>
+                    <p>Đăng tải hình ảnh các hoạt động xanh để mọi người có thể tham khảo và học hỏi.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Quản lý người dùng</h3>
+                    <p>Quản trị viên có thể xem thông tin chi tiết về người dùng và số lượng người tham gia.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Thống kê hoạt động</h3>
+                    <p>Xem số lượng hành động xanh hàng ngày để phân tích xu hướng và sự quan tâm.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">✅</div>
+                    <h3>Xác nhận & Tích điểm</h3>
+                    <p>Quản trị viên xác thực hành động xanh và tính điểm thưởng cho người dùng.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <h2>Thành tựu cộng đồng</h2>
+            <p class="section-subtitle">Cùng nhau chúng ta đã tạo ra những thay đổi tích cực cho môi trường</p>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">2,847</div>
+                    <div class="stat-label">Người dùng tham gia</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">15,632</div>
+                    <div class="stat-label">Hành động xanh</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">89</div>
+                    <div class="stat-label">Chiến dịch hoàn thành</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">1,245</div>
+                    <div class="stat-label">Điểm thưởng đã trao</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campaigns Section -->
+    <section id="campaigns" class="campaigns">
+        <div class="container">
+            <h2>Chiến dịch đang diễn ra</h2>
+            <p class="section-subtitle">Tham gia các chiến dịch xanh để cùng tạo ra sự thay đổi tích cực cho môi trường</p>
+            
+            <div class="campaigns-grid">
+                <div class="campaign-card">
+                    <h3>Tuần lễ không rác thải nhựa</h3>
+                    <p>Thử thách 7 ngày không sử dụng đồ nhựa dùng một lần. Hãy tìm các giải pháp thay thế thân thiện với môi trường.</p>
+                    <div class="campaign-info">
+                        <span>234 người tham gia</span>
+                        <span>Đến 15/12/2024</span>
+                    </div>
+                    <button class="campaign-btn">Tham gia ngay</button>
+                </div>
+                
+                <div class="campaign-card">
+                    <h3>Trồng cây xanh campus</h3>
+                    <p>Cùng nhau trồng và chăm sóc cây xanh trong khuôn viên trường. Mỗi cây trồng sẽ được ghi nhận và tích điểm.</p>
+                    <div class="campaign-info">
+                        <span>156 người tham gia</span>
+                        <span>Đến 20/12/2024</span>
+                    </div>
+                    <button class="campaign-btn">Tham gia ngay</button>
+                </div>
+                
+                <div class="campaign-card">
+                    <h3>Tiết kiệm năng lượng</h3>
+                    <p>Chiến dịch khuyến khích tiết kiệm điện và nước trong ký túc xá và các tòa nhà trường học.</p>
+                    <div class="campaign-info">
+                        <span>189 người tham gia</span>
+                        <span>Đến 25/12/2024</span>
+                    </div>
+                    <button class="campaign-btn">Tham gia ngay</button>
+                </div>
+            </div>
+            
+            <div class="view-all">
+                <button class="view-all-btn">Xem tất cả chiến dịch</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2>Nói chuyện với chúng tôi</h2>
+                <p>Liên hệ để được tư vấn và hỗ trợ về các tính năng của Green Campus</p>
+                <button class="contact-btn">Liên hệ ngay</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Green Campus</h3>
+                    <p>Nền tảng khuyến khích sinh viên, học sinh và giảng viên cùng tham gia tạo ra môi trường xanh sạch đẹp.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Liên kết nhanh</h3>
+                    <ul>
+                        <li><a href="#home">Trang chủ</a></li>
+                        <li><a href="#campaigns">Chiến dịch</a></li>
+                        <li><a href="#activities">Hoạt động xanh</a></li>
+                        <li><a href="#ranking">Bảng xếp hạng</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Thông tin liên hệ</h3>
+                    <div class="contact-details">
+                        <p>📧 info@greencampus.edu.vn</p>
+                        <p>📞 +84 89.999.999</p>
+                        <p>📍 số 175-Tây Sơn-Hà Nội</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Green Campus. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
