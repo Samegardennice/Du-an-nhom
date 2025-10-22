@@ -1,0 +1,69 @@
+/* dropdown.css - Green Campus user dropdown (tách riêng) */
+.gc-user-dropdown {
+  position: relative;
+  display: inline-block;
+  font-family: inherit;
+}
+
+.gc-user-dropdown .user-info {
+  cursor: pointer;
+  user-select: none;
+}
+
+/* dropdown box */
+.gc-dropdown-menu {
+  display: none; /* hiển thị bằng JS */
+  position: absolute;
+  right: 0;
+  top: calc(100% + 8px);
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  min-width: 200px;
+  overflow: hidden;
+  z-index: 1200;
+  transform-origin: top right;
+  opacity: 0;
+  transform: translateY(-6px) scale(0.98);
+  transition: opacity 180ms ease, transform 180ms ease;
+  border: 1px solid rgba(0,0,0,0.04);
+}
+
+/* show state */
+.gc-dropdown-menu.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* item */
+.gc-dropdown-item {
+  padding: 12px 14px;
+  font-size: 14px;
+  color: #222;
+  border-bottom: 1px solid #f2f2f2;
+  background: transparent;
+}
+
+/* link item */
+.gc-dropdown-link {
+  display: block;
+  padding: 10px 14px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  transition: background 0.12s;
+}
+
+.gc-dropdown-link:hover {
+  background: #f6f6f6;
+}
+
+/* small responsive tweak */
+@media (max-width: 640px) {
+  .gc-dropdown-menu {
+    right: 8px;
+    left: 8px;
+    min-width: auto;
+  }
+}
